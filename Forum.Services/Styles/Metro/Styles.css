@@ -1,0 +1,171 @@
+﻿html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li, form, label,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body, html {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    font-family: segoeui;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: segoeui;
+    src: url('fonts/segoeuil.ttf');
+}
+
+input, textarea, fieldset {
+    background: none;
+    border: 1px solid #9f9f9f;
+    resize: none;
+    overflow: hidden;
+    font-family: segoeui;
+}
+
+.title-input{
+    margin-left: 25px;
+}
+fieldset input[type="text"]{
+    
+    margin-bottom: 5px;
+}
+
+    textarea:focus, input:focus {
+        outline: none;
+    }
+/*Common styles*/
+
+#main-content {
+    width: 550px;
+    margin: 30px auto;
+}
+
+#tabstrip {
+    border: none;
+    width: 550px;
+    height: 130px;
+    margin: 30px auto;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 100;
+}
+
+.categories-list li,
+.posts-list li,
+.current-post-list li {
+    background-color: #8EBC00;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+    /*.categories-list :hover,
+.posts-list :hover,
+.current-post-list :hover {
+    background-color: #84ac0a;
+}*/
+
+    .categories-list li :nth-child(2),
+    .posts-list li:nth-child(2),
+    .current-post-list li:nth-child(2) {
+        background-color: #ADE109;
+    }
+
+    /*.categories-list :nth-child(2) :hover,
+.posts-list :nth-child(2) :hover,
+.current-post-list :nth-child(2) :hover {
+    background-color: #506410;
+}*/
+
+    .categories-list li a,
+    .posts-list li a,
+    .current-post-list a,
+    .white {
+        color: #fff;
+        padding: 0 5px;
+    }
+
+.post-content {
+    margin: 0 auto;
+    min-height: 100px;
+    width: 450px;
+    color: black;
+}
+
+    .post-content span {
+        color: #8EBC00;
+    }
+
+
+.comment-content {
+    min-height: 50px;
+    width: 225px;
+}
+
+a {
+    color: #8EBC00;
+    font-weight: bold;
+}
+
+fieldset legend {
+    color: #8D8DA2;
+}
+
+footer {
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.post-tags {
+    background-color: #8EBC00;
+    color: #fff !important;
+    float: left;
+    margin-right: 10px;
+    padding: 2px 5px;
+}

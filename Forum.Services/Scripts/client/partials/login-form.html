@@ -1,0 +1,56 @@
+﻿<div id="login-or-register" class="k-content">
+    <div class="wrapper">
+        <div id="tabstrip">
+            <ul>
+                <li class="k-state-active">Login</li>
+                <li>Register</li>
+            </ul>
+            <div>
+                <label for="tb-username">Username</label>
+                <input data-bind="value: username" type="text" id="tb-username-login"
+                    name="username" placeholder="Username" required validationmessage="Please enter {0}" />
+                <br />
+                <label for="tb-password">Password</label>
+                <input data-bind="value: password" type="password" id="tb-password-login"
+                    name="password" placeholder="Password" required validationmessage="Password is required!" />
+                <br />
+                <button class="k-button" data-bind="click: login">Login</button>
+            </div>
+            <div>
+                <label for="tb-username-register">Username</label>
+                <input data-bind="value: username" type="text" id="tb-username-register"
+                    name="username" placeholder="Username" required validationmessage="Please enter {0}" />
+                <br />
+                <label for="tb-password-register">Password</label>
+                <input data-bind="value: password" type="password" id="tb-password-register"
+                    name="password" placeholder="Password" required validationmessage="Password is required!" />
+                <br />
+                <button class="k-button" data-bind="click: register">Register</button>
+            </div>
+            
+        </div>
+        <div id="errMsg" data-bind="text: message">Error message</div>
+    </div>
+</div>
+
+<script>
+    var validator = $('#login-or-register').kendoValidator().data('kendoValidator');
+    $(document).ready(function () {
+        $("#tabstrip").kendoTabStrip({
+            animation: {
+                open: {
+                    effects: "fadeIn"
+                }
+            }
+        });
+    });
+</script>
+<style scoped>
+    /*#wrapper {
+        width: 360px;
+        height: 337px;
+        margin: 30px auto;
+        padding: 80px 15px 0 15px;
+        /*background: url('../../content/web/tabstrip/forecast.png') transparent no-repeat 0 0;
+    }*/
+</style>

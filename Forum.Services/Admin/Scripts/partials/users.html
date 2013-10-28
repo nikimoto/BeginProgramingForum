@@ -1,0 +1,6 @@
+﻿<h1>All Users</h1>
+<ul >
+    <li ng-repeat="user in users">
+        <span>{{user.username}}</span><a href="#/users/edit/{{user.id}}">Edit</a><button id='{{user.id}}'  class="k-button remove-user">Remove</button> <span>Ban: {{user.isBanned}}</span>
+    </li>
+</ul>

@@ -1,0 +1,30 @@
+﻿<div id="loggedUserInformation" data-bind="visible : isUserLogged">
+    Hi, <span data-bind="text: loggedUsername"></span>
+    <a href="#/logout">Logout</a>
+</div>
+<fieldset name="posts-field">
+    <legend for="posts-fieldset" data-bind="text: categoryName"></legend>
+    <p data-bind="text: categoryDescription">
+
+    </p>
+    <ul data-template="posts-template" data-bind="source: posts" class="posts-list"></ul> 
+
+        <script type="text/x-kendo-template" id="posts-template">
+            <li>
+                <a href="\#/post/#= id #"><span data-bind="text: title"></span></a>
+            </li>
+        </script>
+    <div data-bind="invisible : isUserLogged">Do you want to <a href="#/login-or-register">login</a> or<a href="#/login-or-register">register</a> ?</div>
+    <div data-bind="visible : isUserLogged">
+            <fieldset name="new-post-field">
+                <legend for="new-post-field">Create new post</legend>
+                    Title :<input type="text" data-bind="value: postTitle" class="title-input"/>
+                    Tags : <input type="text" data-bind="value: postTags" />
+                <br />
+                    Content : <textarea data-bind="value: postContent" ></textarea>                   
+                   <br />              
+                <button data-bind="click : createPost" class="k-button create-post-btn">Create</button>                  
+            </fieldset>
+            <div id="err-msg" data-bind="text: message"></div>
+        </div>
+</fieldset>

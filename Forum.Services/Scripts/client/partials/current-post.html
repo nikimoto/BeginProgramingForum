@@ -1,0 +1,46 @@
+﻿<div id="loggedUserInformation" data-bind="visible: isUserLogged">
+    Hi, <span data-bind="text: loggedUsername"></span>
+    <a href="#/logout">Logout</a>
+</div>
+<fieldset name="current-post-field">
+    <legend for="current-post-field" data-bind="text: post.title"></legend>
+    <div class="post-content">
+        <p data-bind="text: post.content">
+        </p>
+        by
+         <span data-bind="text: post.author"></span>
+         created on 
+        <span data-bind="text: post.creationDate"></span>            
+        <ul data-template="tags-template" data-bind="source: post.tags"></ul>         
+    </div>
+    <script type="text/x-kendo-template" id="tags-template">
+        <li>
+            <span data-bind="text: name" class="post-tags"></span>
+           
+        </li>
+    </script>
+
+    <ul data-template="comments-template" data-bind="source: comments" class="current-post-list"></ul>
+
+    <script type="text/x-kendo-template" id="comments-template">
+        <li>
+           <div data-bind="text: content" class="white comment-content"></div> by
+            <span data-bind="text: author"></span> on
+            <span data-bind="text: creationDate"></span>
+        </li>
+    </script>
+    <div data-bind="invisible: isUserLogged">Do you want to <a href="#/login-or-register">login</a> or<a href="#/login-or-register">register</a> ?</div>
+    <div data-bind="visible: isUserLogged" id="comment">
+        <fieldset name="new-post-field">
+            <legend for="new-post-field">Create new comment</legend>
+            Content :
+                <br />
+            <textarea data-bind="value: commentContent" id="editor" rows="5" cols="10" style="width: 350px"
+                name="comment" required validationmessage="The {0} cannot be empty.">
+                </textarea>
+            <br />
+            <button data-bind="click: createComment" class="k-button">Comment !</button>
+            <div class="status" data-bind="text: message"></div>
+        </fieldset>
+    </div>
+</fieldset>

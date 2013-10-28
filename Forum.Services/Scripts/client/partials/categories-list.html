@@ -1,0 +1,15 @@
+﻿<div id="loggedUserInformation" data-bind="visible : isUserLogged">
+    Hi, <span data-bind="text: loggedUsername"></span>
+    <a href="#/logout">Logout</a>
+</div>
+<fieldset name="categories-field">
+    <legend for="categories-fieldset">Categories</legend>
+        <ul data-template="categories-template" data-bind="source: categories" class="categories-list"></ul>
+        
+        <script type="text/x-kendo-template" id="categories-template">
+            <li>
+                <a href="\#/category/#= Id #"><span data-bind="text: Title"></span></a>
+            </li>
+        </script>
+        <div data-bind="invisible : isUserLogged">Do you want to <a href="#/login-or-register">login</a> or<a href="#/login-or-register"> register</a> ?</div>
+</fieldset> 

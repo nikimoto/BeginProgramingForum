@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="forum" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <!--<a href="index.html">index.html</a>-->
+    <link href="../Styles/kendo.metro.min.css" rel="stylesheet" />
+    <link href="../Styles/kendo.common.min.css" rel="stylesheet" />
+    <link href="Styles.css" rel="stylesheet" />
+    <script src="Scripts/libs/jquery-1.7.1.min.js"></script>
+    <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/sha1.js"></script>
+    <script src="Scripts/libs/angular.js"></script>
+    <script src="Scripts/libs/underscore.js"></script>
+    <!--<script src="Scripts/app/http-request.js"></script>-->
+    <script src="Scripts/app/controllers.js"></script>
+    <script src="Scripts/app.js"></script>
+    <style>
+        a {
+            margin:5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Wellcome to Begin Programming Forum Admin Panel</h1>
+        <a href="#" id="log-out-btn">logout</a>
+    </header>
+    <div ng-view id="wrapper">
+
+    </div>
+</body>
+</html>

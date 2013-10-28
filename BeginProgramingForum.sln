@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Forum.Models", "Forum.Models\Forum.Models.csproj", "{67233181-1695-459D-8A74-29B30AE4B830}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Forum.Data", "Forum.Data\Forum.Data.csproj", "{8B3F8FBF-65A9-4BDD-AE38-58125E1F74A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Forum.Services", "Forum.Services\Forum.Services.csproj", "{A0180A9F-99F0-49C7-B4F1-33759FBD8F69}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs14
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Forum.Data\\Forum.Data.csproj
+		SccProjectName1 = Forum.Data
+		SccLocalPath1 = Forum.Data
+		SccProjectUniqueName2 = Forum.Models\\Forum.Models.csproj
+		SccProjectName2 = Forum.Models
+		SccLocalPath2 = Forum.Models
+		SccProjectUniqueName3 = Forum.Services\\Forum.Services.csproj
+		SccProjectName3 = Forum.Services
+		SccLocalPath3 = Forum.Services
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{67233181-1695-459D-8A74-29B30AE4B830}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67233181-1695-459D-8A74-29B30AE4B830}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67233181-1695-459D-8A74-29B30AE4B830}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67233181-1695-459D-8A74-29B30AE4B830}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B3F8FBF-65A9-4BDD-AE38-58125E1F74A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B3F8FBF-65A9-4BDD-AE38-58125E1F74A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B3F8FBF-65A9-4BDD-AE38-58125E1F74A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B3F8FBF-65A9-4BDD-AE38-58125E1F74A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0180A9F-99F0-49C7-B4F1-33759FBD8F69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0180A9F-99F0-49C7-B4F1-33759FBD8F69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0180A9F-99F0-49C7-B4F1-33759FBD8F69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0180A9F-99F0-49C7-B4F1-33759FBD8F69}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
